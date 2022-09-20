@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .abc {
+            text-align: center;
+            height: 65px;
+            background-color: #fb3;
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+
+        }
+
+        .abc .logo {
+            display: inline-block;
+            width: 30%;
+
+        }
+
+        .abc nav {
+            display: inline-block;
+            width: 60%;
+
+
+        }
+
+        .abc h1 {
+            text-align: left;
+            color: aliceblue;
+            position: relative;
+            top: 10px;
+            right: 55px;
+        }
+
+        .abc img {
+            float: left;
+            width: 80px;
+            text-align: left;
+            position: relative;
+            top: 5px;
+            right: 60px;
+        }
+
+        ul {
+            display: inline-block;
+            list-style: none;
+
+        }
+
+        li {
+            display: inline-block;
+
+        }
+
+        .abc nav ul li {
+            text-align: right;
+            padding: 5px;
+            color: aliceblue;
+            position: relative;
+            top: 5px;
+            left: 130px;
+
+
+
+        }
+        .abc a{
+            color: azure;
+        }
+
+        .abc nav ul li:hover {
+            background-color: rgb(248, 150, 37);
+        }
+
+         .mno-prepend {
+            background-image: url('logo-yellow.png');
+            height: 100px;
+            margin-bottom: -20px;
+        } 
+
+        .mno {
+            background-color: #fb3;
+            overflow: auto;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+
+        .mno .column {
+            float: left;
+            width: 33.33%;
+            height: 10%;
+
+        }
+
+        .mno .column ul a {
+            text-align: left;
+            color: azure;
+        }
+
+        .mno img {
+            float: left;
+            position: relative;
+            left: 90px;
+            bottom: 15px;
+        }
+
+        .pqr {
+            text-align: center;
+            height: 70px;
+            background-color: #fd7e14;
+            color: white;
+
+        }
+        .testa {
+            text-align: center;
+        }
+        .testa h1 {
+            color: brown;
+        }
+        .testa h3{
+            width:800px;
+            position: relative;
+            left: 20px;
+            color: #773702;
+            
+            
+        }
+        #one{
+            color: white;
+        }
+        #two{
+            color: white;
+        }
+        #three{
+            color: white;
+        }
+     
+        .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .abc nav ul li a {
+        text-decoration:none;        
+      }
+      .column ul li a{
+        text-decoration: none;
+      }
+      .abc nav ul li.active {
+        background-color:  rgba(226, 110, 9, 0.3);;
+      }
+      #hone a{
+        text-decoration: none;
+        font-size: 25px;
+      }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="abc">
+        <div class="logo">
+
+            <img src="alpinelogo.png" alt="alpinelogo" >
+            <h1 id="hone"><a href="alpinem.html"> ALPINE RIVERHILL </a></h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li> <i class="fa-solid fa-house"></i> <a href="alpinem.html"> Home</a></li>
+                <li> <i class="fa-solid fa-image"></i> <a href="gallery.html"> Gallery</a></li>
+                <li> <i class="fa-solid fa-bacteria"></i> <a href="covid.html"> Covid-19 Safety Practices</a></li>
+                <li> <i class="fa-solid fa-crown"></i> <a href="offers.html"> Offers</a></li>
+                <li class="active"> <i class="fa-solid fa-quote-left"></i> <a href="testimonials.html">Testimonials</a></li>
+                <li> <i class="fa-solid fa-circle-info"></i> <a href="about.html"> About Us</a></li>
+                <li> <i class="fa-solid fa-phone"></i> <a href="contact.html"> Contact Us</a></li>
+            </ul>
+        </nav>
+    </div><br><br><br>
+    <div class="testa">
+        <h1>What our Guests say about us?</h1>
+        <br>
+        <h2>Every Review matters</h2>
+        <br><br> <br><br>
+        <h1 class="animate__animated animate__zoomIn">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><h3>A stay at Alpine Riverhill let's you experience Lonavala's natural beauty in an intimate environment. One of Lonavala's most sought-after villas, a stay at Alpine Riverhill promises all the comforts of home and the luxury of a hotel. Located amongst greenery, this grand space is replete with amenities. Here, you can spend your days enjoying the soothing mountain breeze as the on-site staff attend to your needs. As the sun sets, take a stroll by the pool, where you can enjoy mouth-watering grilled tandoori dishes.</h3></div>
+              <div class="swiper-slide"><h3>For those seeking serenity, Alpine Riverhill offers a perfect location peacefully nestled in a cozy environment. The villa's natural beauty and five star amenities make it an unforgettable place to call your own. Each morning, enjoy the birds chirping while savoring your breakfast.</h3></div>
+              <div class="swiper-slide"><h3>It is almost too easy to fall in love with the warm and welcoming ambience, great food, hospitality and aminities. While you'll have no shortage of options, I recommend the tasty barbecue and sheesha by the poolside. Combine everything Alpine Riverhill has to offer and you will have the recipe for an ideal vacation for family and friends alike.</h3></div>
+              <div class="swiper-slide"><h3>Alpine Riverhill is the ideal destination for your next family reunion. Tucked away behind lush greenery and trees, this villa offers the perfect balance of privacy and accessibility. </h3></div>
+              <div class="swiper-slide"><h3>Whether it's your first time visiting or hundredth, Alpine Riverhill never fails to impress. From the library to the barbeque and bonfire, from hookah to the games and the music system, there's somethWhether it's your first time visiting or hundredth, Alpine Riverhill never fails to impress. From the library to the barbeque and bonfire, from hookah to the games and bonfire, there's something here for everyone.</h3></div>
+              <div class="swiper-slide"><h3>Pool parties, barbeque, bonfire and sheesha - all of the above are on the menu at this luxe villa in Lonavla. A stay here is about decadent leisure. It's hard to imagine a better vacation without Alpine RiverHill.</h3></div>
+              
+            </div>
+        </h1>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="clearfix"></div>
+    <h4 class="animate__animated animate__fadeInUp wow">
+    <div class="mno-prepend">
+        </div>
+
+    <div class="mno">
+        <div class="column">
+            <img src="alpinelogo.png" alt="loogo" width="80px">
+            <h2> ALPINE RIVERHILL </h2>
+            <br><br>
+
+            Alpine Riverhill Villa is a modern & upscale vacation rental villa that is passionate about ‘making moments’
+            and recognising that small gestures make a big difference to our guests. We do ordinary things in an
+            extraordinary way – a philosophy that has defined our brand’s success from the very start. <br><br><br>
+        </div>
+        <div class="column">
+            <h2>QUICK LINKS: </h2>
+            <br> <br>
+            <ul>
+                <li> <i class="fa-solid fa-house"></i> <a href="alpinem.html"> Home</a></li> <br> <br>
+                <li> <i class="fa-solid fa-image"></i> <a href="gallery.html"> Gallery</a></li><br> <br>
+                <li> <i class="fa-solid fa-bacteria"></i> <a href="covid.html"> Covid-19 Safety Practices</a></li><br> <br>
+                <li> <i class="fa-solid fa-crown"></i> <a href="offers.html"> Offers</a></li><br> <br>
+                <li> <i class="fa-solid fa-quote-left"></i> <a href="testimonials.html">Testimonials</a></li><br> <br>
+                <li> <i class="fa-solid fa-circle-info"></i> <a href="about.html"> About Us</a></li><br><br>
+                <li> <i class="fa-solid fa-phone"></i> <a href="contact.html"> Contact Us</a></li><br><br>
+            </ul> <br><br><br>
+        </div>
+        <div class="column">
+            <h2>CONTACTS DETAILS:</h2>
+            <br>
+            Address:
+            Bungalow no. 01, River Hill Park Society, Near Sai Brooklands, Opp. Sidhu Dhaba, Takve, Old Mumbai-Pune
+            Highway, Lonavala - 410405
+            Contact Number:
+            +919930247992 / +919667555554 <br>
+            Social: <br>
+            <a href="https://www.facebook.com/" id="one"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" id="two"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://web.whatsapp.com/" id="three"><i class="fa-brands fa-whatsapp"></i></a>
+
+        </div>
+    </div>
+    
+
+    
+
+    <div class="pqr">
+        <h4><br> <i class="fa-regular fa-copyright"></i> 2020 Alpine Riverhill | All Rights Reserved </h4>
+
+    </div>
+</h4>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link rel="stylesheet" href="css/animate.css">
+  
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .abc {
+            text-align: center;
+            height: 65px;
+            background-color: #fb3;
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+
+        }
+
+        .abc .logo {
+            display: inline-block;
+            width: 30%;
+
+        }
+
+        .abc nav {
+            display: inline-block;
+            width: 60%;
+        }
+
+        .abc h1 {
+            text-align: left;
+            color: aliceblue;
+            position: relative;
+            top: 10px;
+            right: 55px;
+        }
+
+        .abc img {
+            float: left;
+            width: 80px;
+            text-align: left;
+            position: relative;
+            top: 5px;
+            right: 60px;
+        }
+
+        ul {
+            display: inline-block;
+            list-style: none;
+
+        }
+
+        li {
+            display: inline-block;
+
+        }
+
+        .abc nav ul li {
+            text-align: right;
+            padding: 5px;
+            color:azure;
+            
+            position: relative;
+            top: 5px;
+            left: 130px;
+        
+
+
+
+
+        }
+        .abc a{
+            color: azure;
+        }
+
+        .abc nav ul li:hover {
+            background-color: rgb(248, 150, 37);
+        }
+
+        .def {
+            width: 100%;
+
+        }
+
+        .def .col {
+            padding: 50px;
+            margin: 50px;
+        }
+
+        .col {
+
+            text-align: center;
+            width: 30px;
+            margin: 50px;
+            padding: 50px;
+            display: inline;
+        }
+
+        .col {
+            color: #fb3;
+            text-align: center;
+            display: inline-block;
+            width: 24%;
+            margin:10px;
+            position: relative;
+            left: 180px;
+        }
+
+        .col h1 {
+            color: black;
+        }
+
+        .col h5 {
+            color: black;
+        }
+
+        .col u {
+            color: black;
+
+        }
+
+        .row h1 {
+            position: absolute;
+            top: 202%;
+            left: 27%;
+            color: #fb3;
+
+
+        }
+
+        .row h2 {
+            position: absolute;
+            top: 210%;
+            left: 27%;
+            color: rgb(247, 247, 247);
+        }
+
+        .row form {
+            border: solid;
+            color: aliceblue;
+            text-align: center;
+            width: 650px;
+            padding: 0px;
+            position: absolute;
+            top:250%;
+            left: 27%;
+
+        }
+
+        .row p {
+            color: aliceblue;
+            margin: 4px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: x-large;
+
+
+        }
+
+        .ghi button {
+            background-color: #fb3;
+            padding: 10px;
+            color: aliceblue;
+        }
+
+        .jkl h1 {
+            text-align: center;
+            color: brown;
+
+        }
+
+        .jkl h2 {
+            text-align: center;
+        }
+
+
+        .jkl img {
+            position: relative;
+            left: 450px;
+        }
+
+        .jkl form button {
+            position: relative;
+            left: 700px;
+            background-color: #fb3;
+            padding: 15px;
+            color: aliceblue;
+            border: none;
+
+        }
+
+        .jkl .jk {
+            text-align: center;
+        }
+
+        .mno-prepend {
+            background-image: url('logo-yellow.png');
+            height: 100px;
+            margin-bottom: -20px;
+        }
+
+        .mno {
+            background-color: #fb3;
+            overflow: auto;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+
+        .mno .column {
+            float: left;
+            width: 33.33%;
+        }
+
+        .mno .column ul  a {
+            text-align: left;
+            color: azure;
+            
+        }
+
+        .mno img {
+            float: left;
+            position: relative;
+            left: 90px;
+            bottom: 15px;
+        }
+
+        .pqr {
+            text-align: center;
+            height: 70px;
+            background-color: #fd7e14;
+            color: white;
+
+        }
+        #one{
+            color: white;
+        }
+        #two{
+            color: white;
+        }
+        #three{
+            color: white;
+        }
+
+        .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .abc nav ul li a {
+        text-decoration:none;        
+      }
+      .column ul li a{
+        text-decoration: none;
+      }
+      /* .abc nav ul li.active {
+        background-color:  rgba(226, 110, 9, 0.3);;
+      } */
+      /* .ghi .row input{ */
+        /* font-size: xx-large; */
+      /* } */
+      .ghi .row form{
+        text-align: left;
+      }
+      #enq{
+        text-align: center;
+        font-size: 35px
+      }
+      #send{
+        position: relative;
+        left: 250px;
+        border: none;
+        border-radius: 3px;
+      }
+      #inpone{
+        width: 635px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+      #inptwo{
+        height: 40px;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+      #inpthree{
+        height: 40px;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+      #inpfour{
+        height: 40px;
+        border-radius: 5px;
+        font-size: 15px;
+
+      }    #inpfive{
+        height: 40px;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+      #inpsix{
+        width: 635px;
+        height: 80px;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+      #pop{
+        position: absolute;
+        top: 1570px;
+      }
+      #butone{
+        position: relative;
+        left: 00px;
+      }
+      #hone a{
+        text-decoration: none;
+        font-size: 25px;
+      }
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="abc">
+            <div class="logo">
+
+                <img src="alpinelogo.png" alt="alpinelogo">
+                <h1 id="hone"><a href="alpinem.html"> ALPINE RIVERHILL </a></h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="active"> <i class="fa-solid fa-house"></i> <a href="alpinem.html"> Home</a></li>
+                    <li> <i class="fa-solid fa-image"></i> <a href="gallery.html"> Gallery</a></li>
+                    <li> <i class="fa-solid fa-bacteria"></i> <a href="covid.html"> Covid-19 Safety Practices</a></li>
+                    <li> <i class="fa-solid fa-crown"></i> <a href="offers.html"> Offers</a></li>
+                    <li> <i class="fa-solid fa-quote-left"></i> <a href="testimonials.html">Testimonials</a></li>
+                    <li> <i class="fa-solid fa-circle-info"></i> <a href="about.html"> About Us</a></li>
+                    <li> <i class="fa-solid fa-phone"></i> <a href="contact.html"> Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="alpinehome.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="bg2.jpg" alt="bg2"></div>
+                  <div class="swiper-slide"><img src="bg3.jpg" alt="bg3"></div>
+                  <div class="swiper-slide"><img src="bg4.jpg" alt="bg4"></div>
+                  <div class="swiper-slide"><img src="bg5.jpg" alt="bg5"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div class="def">
+        </div>
+              
+      
+        <h6 class="animate__animated animate__zoomIn wow">
+        <div class="col"><i class="fa-solid fa-bed fa-5x"></i><u>
+                <h1>6 Master Bedrooms</h1>
+            </u><br>
+            <h5>Air Conditioned with an attached balcony</h5>
+        </div>
+        <div class="col"><i class="fa-solid fa-couch fa-5x"></i><U>
+                <h1>Spacious Living Room</h1>
+            </u><br>
+            <h5>Sofa Set | Dining Area | Fully Air Conditioned</h5>
+        </div>
+        <div class="col"><i class="fa-solid fa-user-group fa-5x"></i><u>
+                <h1>25-30 guests</h1>
+            </u><br>
+            <h5>Suitable for family, friends and corporate getaways</h5>
+        </div>
+        <div class="col"><i class="fa-solid fa-water-ladder fa-5x"></i><u>
+                <h1>Private swimming pool</h1>
+            </u><br>
+            <h5>Full Size | Waterfall | Patio Loungers | Underwater LED Lightning</h5>
+        </div>
+        <div class="col"><i class="fa-solid fa-bell-concierge fa-5x"></i><u>
+                <h1>Meals</h1>
+            </u><br>
+            <h5>Vegetarian | Non-Vegeterian | Jain meal plan (Breakfast, Lunch, High Tea, Dinner)</h5>
+        </div>
+        <div class="col"><i class="fa-solid fa-music fa-5x"></i><u>
+                <h1>Music System</h1>
+            </u><br>
+            <h5>Bluetooth, USB & AUX Connectivity | Karaoke</h5>
+        </div>
+        <div class="col"><i class="fa-solid fa-wifi fa-5x"></i><u>
+                <h1>High-Speed Wifi</h1>
+            </u> <br>
+            <h5>Speed Upto 30 MBPS</h5>
+        </div>
+        <div class="col"><i class="fa-solid fa-tv fa-5x"></i><u>
+                <h1>Smart Television</h1>
+            </u><br>
+            <h5>Full HD 50 inch Led</h5>
+        </div>
+        <div class="col"><i class="fa-solid fa-blog fa-5x"></i><u>
+                <h1>Online Streaming</h1>
+            </u><br>
+            <h5>Netflix | Disney + Hotstar | Amazon Prime</h5>
+        </div>
+
+        </div>
+        </h6>
+       
+        <div class="ghi">
+
+
+            <img src="alpinehomeback.jpg" alt="backhome" width="100%" height="1100px">
+            <div class="row">
+                <h1>Intrested your life memorable with Alpine River?</h1>
+                <h2>Fill the below details and our support team will contact you soon </h2>
+                <h2 class="animate__animated animate__zoomIn wow" id="pop" >
+                <form>
+                    <br><br>
+                    
+                    <p id="enq"> Enquiry Form </p> <br>
+                    <p> Name: <br> <br><input type="text" placeholder="Full Name" id="inpone"></p> <br>
+                    <p>Phone: <input type="number" placeholder="Contact Number" id="inptwo"> No. of Guests <input type="number"
+                            placeholder="1" id="inpthree"></p><br>
+                    <p> Check-In Date: <input type="date" name="date" id="inpfour"> Check-Out Date: <input type="date" id="inpfive">
+                    </p><br>
+                    <p id="ABC"> Amenities: </p> <br>
+                    <p id="ABC"> <input type="checkbox" id="bone"> Meals</p> 
+                    <p id="ABC"> <input type="checkbox" id="btwo"> Barbeque</p>
+                    <p id="ABC"> <input type="checkbox" id="bthree"> Seesha</p><br>
+                    <p id="AB">Message: <br> <br> <input type="text" placeholder="Type your message here...." id="inpsix"></p><br> <br>
+
+                    <button name="SUBMIT" type="submit" id="send"> <i class="fa-solid fa-paper-plane"></i> SEND ENQUIRY </button>
+                    <br><br><br> <br>
+
+                </form>
+            </h2>
+                <br><br>
+
+            </div>
+        </div>
+        <div class="jkl">
+            <h1>BEAUTY OF ALPINE RIVERHILL</h1> <br>
+            <h2>live the moment, create memories and cherish them forever!</h2> <br><br><br>
+            <h1 class="animate__animated animate__zoomIn wow">
+            <div class="jk"><iframe width="560" height="315" src="https://www.youtube.com/embed/SEadiIzqr_E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe> </div>
+            
+            <br><br> <br>
+            <form>
+                <a href="gallery.html"> <button name="Button" type="button" id="butone"> VIEW PHOTOS <i
+                            class="fa-solid fa-angles-right"></i></button></a>
+            </form>
+            </h1>
+    </header>
+
+    </div>
+    <br><br><br><br>
+    
+    <div class="clearfix"></div>
+    <h4 class="animate__animated animate__fadeInUp wow">
+    <div class="mno-prepend">
+
+    </div>
+  
+    <div class="mno">
+        <div class="column">
+            <img src="alpinelogo.png" alt="loogo" width="80px">
+            <h2> ALPINE RIVERHILL </h2>
+            <br><br>
+
+            Alpine Riverhill Villa is a modern & upscale vacation rental villa that is passionate about ‘making moments’
+            and recognising that small gestures make a big difference to our guests. We do ordinary things in an
+            extraordinary way – a philosophy that has defined our brand’s success from the very start. <br><br><br>
+        </div>
+        <div class="column">
+            <h2>QUICK LINKS: </h2>
+            <br> <br>
+            <ul>
+                <li> <i class="fa-solid fa-house"></i> <a href="alpinem.html"> Home</a></li> <br> <br>
+                <li> <i class="fa-solid fa-image"></i> <a href="gallery.html"> Gallery</a></li><br> <br>
+                <li> <i class="fa-solid fa-bacteria"></i> <a href="covid.html"> Covid-19 Safety Practices</a></li><br> <br>
+                <li> <i class="fa-solid fa-crown"></i> <a href="offers.html"> Offers</a></li><br> <br>
+                <li> <i class="fa-solid fa-quote-left"></i> <a href="testimonials.html">Testimonials</a></li><br> <br>
+                <li> <i class="fa-solid fa-circle-info"></i> <a href="about.html"> About Us</a></li><br><br>
+                <li> <i class="fa-solid fa-phone"></i> <a href="contact.html"> Contact Us</a></li><br><br>
+            </ul>
+             <br><br><br>
+        </div>
+        <div class="column">
+            <h2>CONTACTS DETAILS:</h2>
+            <br>
+            Address:
+            Bungalow no. 01, River Hill Park Society, Near Sai Brooklands, Opp. Sidhu Dhaba, Takve, Old Mumbai-Pune
+            Highway, Lonavala - 410405
+            Contact Number:
+            +919930247992 / +919667555554 <br>
+            Social: <br>
+            <a href="https://www.facebook.com/" id="one"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" id="two"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://web.whatsapp.com/" id="three"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+
+    <div class="pqr">
+        <h4><br> <i class="fa-regular fa-copyright"></i> 2020 Alpine Riverhill | All Rights Reserved </h4>
+    </div>
+    </h4>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+              
+</body>
+
+</html>

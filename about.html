@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .abc {
+            text-align: center;
+            height: 65px;
+            background-color: #fb3;
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+
+        }
+
+        .abc .logo {
+            display: inline-block;
+            width: 30%;
+
+        }
+
+        .abc nav {
+            display: inline-block;
+            width: 60%;
+
+
+        }
+
+        .abc h1 {
+            text-align: left;
+            color: aliceblue;
+            position: relative;
+            top: 10px;
+            right: 55px;
+        }
+
+        .abc img {
+            float: left;
+            width: 80px;
+            text-align: left;
+            position: relative;
+            top: 5px;
+            right: 60px;
+        }
+
+        ul {
+            display: inline-block;
+            list-style: none;
+
+        }
+
+        li {
+            display: inline-block;
+
+        }
+
+        .abc nav ul li {
+            text-align: right;
+            padding: 5px;
+            color: aliceblue;
+            position: relative;
+            top: 5px;
+            left: 130px;
+
+
+
+        }
+        .abc a{
+            color: azure;
+        }
+
+        .abc nav ul li:hover {
+            background-color: rgb(248, 150, 37);
+        }
+
+         .mno-prepend {
+            background-image: url('logo-yellow.png');
+            height: 100px;
+            margin-bottom: -20px;
+        } 
+
+        .mno {
+            background-color: #fb3;
+            overflow: auto;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+
+        .mno .column {
+            float: left;
+            width: 33.33%;
+            height: 10%;
+
+        }
+
+        .mno .column ul a {
+            text-align: left;
+            color: azure;
+        }
+
+        .mno img {
+            float: left;
+            position: relative;
+            left: 90px;
+            bottom: 15px;
+        }
+
+        .pqr {
+            text-align: center;
+            height: 70px;
+            background-color: #fd7e14;
+            color: white;
+
+        }
+        #one{
+            color: white;
+        }
+        #two{
+            color: white;
+        }
+        #three{
+            color: white;
+        }
+        .abouta{
+            text-align: center;
+            font-size: 15px;
+            padding: 15px;
+            
+        }
+        .abouta h1{
+            color: brown;
+        }
+        .abouta img{
+            border-radius: 15px;
+            position: relative;
+            right: 400px;
+        }
+        .abouta h3{
+            position: relative;
+            width: 800px;
+            left: 550px;
+            top: -290px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .aboutb{
+            text-align: center;
+        }
+        .aboutb h1{
+            color: rgb(220, 72, 4);
+        }
+        .aboutb{
+            width: 900px;
+        }
+        .aboutb img{
+           position: absolute;
+           top: 750px;  
+           right: 0px;
+
+        }
+        .aboutb h1{
+        position: absolute;
+        top: 770px;
+        left: 600px;
+        }
+        .aboutb h3{
+        position: absolute;
+        top:850px ;
+        left: 100px;
+        color: beige;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 1300px;
+        }
+        .aboutc {
+            text-align: center;
+        }
+        .aboutc h1{
+            color: brown;
+        }
+        .aboutc h3{
+            width: 1000px;
+            position: relative;
+            left: 250px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        .aboutd{
+            border: solid;
+            width:900px;
+            padding: 50px;
+            position: relative;
+            left:300px;
+            
+        }
+        .aboutd h1{
+            position: relative;
+            left: 00px;
+            top: -20px;
+        }
+        .aboutd h3{
+            position: relative;
+            left: -100px;
+        }
+        .aboute{
+            border: solid;
+            width:900px;
+            padding: 50px;
+            position: relative;
+            left:300px
+        }
+        .aboute h1{
+            position: relative;
+            left: 00px;
+            top: -20px;
+        }
+        .aboute h3{
+            position: relative;
+            left: -100px;
+        }
+        .aboutf{
+            border: solid;
+            width:900px;
+            padding: 50px;
+            position: relative;
+            left:300px
+        }
+        .aboutf h1{
+            position: relative;
+            left: 00px;
+            top: -20px;
+        }
+        .aboutf h3{
+            position: relative;
+            left: -100px;
+        }
+        
+        .aboutg{
+            border: solid;
+            width:900px;
+            padding: 50px;
+            position: relative;
+            left:300px
+        }
+        .aboutg h1{
+            position: relative;
+            left: 00px;
+            top: -20px;
+        }
+        .aboutg h3{
+            position: relative;
+            left: -100px;
+        }
+        
+        .abouth{
+            border: solid;
+            width:900px;
+            padding: 50px;
+            position: relative;
+            left:300px
+        }
+        .abouth h1{
+            position: relative;
+            left: 00px;
+            top: -20px;
+        }
+        .abouth h3{
+            position: relative;
+            left: -100px;
+        }
+        
+        .abouti{
+            border: solid;
+            width:900px;
+            padding: 50px;
+            position: relative;
+            left:300px
+        }
+        .abouti h1{
+            position: relative;
+            left: 00px;
+            top: -20px;
+        }
+        .abouti h3{
+            position: relative;
+            left: -100px;
+        }
+        
+        .aboutj{
+            border: solid;
+            width:900px;
+            padding: 50px;
+            position: relative;
+            left:300px
+        }
+        .aboutj h1{
+            position: relative;
+            left: 00px;
+            top: -20px;
+        }
+        .aboutj h3{
+            position: relative;
+            left: -100px;
+        }
+        
+        .aboutk{
+            border: solid;
+            width:900px;
+            padding: 50px;
+            position: relative;
+            left:300px
+        }
+        .aboutk h1{
+            position: relative;
+            left: 00px;
+            top: -20px;
+        }
+        .aboutk h3{
+            position: relative;
+            left: -100px;
+        }
+        
+        .aboutl{
+            border: solid;
+            width:900px;
+            padding: 50px;
+            position: relative;
+            left:300px
+        }
+        .aboutl h1{
+            position: relative;
+            left: 00px;
+            top: -20px;
+        }
+        .aboutl h3{
+            position: relative;
+            left: -100px;
+        }
+
+
+
+
+        .aboutd{
+            background-color: #fb3;;
+        }
+        .aboutf{
+            background-color: #fb3;;
+        }
+        .abouth{
+            background-color: #fb3;;
+        }
+        .aboutj{
+            background-color: #fb3;;
+        }
+
+        .aboutl{
+            background-color: #fb3;;
+        }
+        .abc nav ul li a {
+        text-decoration:none;        
+      }
+      .column ul li a{
+        text-decoration: none;
+      }
+      .abc nav ul li.active {
+        background-color:  rgba(226, 110, 9, 0.3);;
+      }
+      #hone a{
+        text-decoration: none;
+        font-size: 25px;
+      }
+    </style>
+</head>
+<body>
+    <div class="abc">
+        <div class="logo">
+
+            <img src="alpinelogo.png" alt="alpinelogo">
+            <h1 id="hone"><a href="alpinem.html"> ALPINE RIVERHILL </a></h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li> <i class="fa-solid fa-house"></i> <a href="alpinem.html"> Home</a></li>
+                <li> <i class="fa-solid fa-image"></i> <a href="gallery.html"> Gallery</a></li>
+                <li> <i class="fa-solid fa-bacteria"></i> <a href="covid.html"> Covid-19 Safety Practices</a></li>
+                <li> <i class="fa-solid fa-crown"></i> <a href="offers.html"> Offers</a></li>
+                <li> <i class="fa-solid fa-quote-left"></i> <a href="testimonials.html">Testimonials</a></li>
+                <li class="active"> <i class="fa-solid fa-circle-info"></i> <a href="about.html"> About Us</a></li>
+                <li> <i class="fa-solid fa-phone"></i> <a href="contact.html"> Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br> <br>
+  <div class="abouta">
+    
+    <h1 class="animate__animated animate__zoomIn wow">ABOUT US
+    <br><br>
+    <img src="water1.jpg" alt="water" width="300px">
+
+    <h3 class="animate__animated animate__zoomIn wow">
+
+        Alpine Riverhill Villa is a modern & upscale vacation villa that is passionate about ‘making moments’ and recognising that small gestures make a big difference to our guests. We do ordinary things in an extraordinary way – a philosophy that has defined our brand’s success from the very start.
+        <br> <br>
+        At Alpine Riverhill, we embrace innovation to meet ever-changing guest needs. Our approach to service has remained consistent; warm, intuitive and personal.
+        <br> <br>
+        We believe our purpose is to create impressions that will stay with you for a lifetime. It comes from our belief that life is richer when we truly connect to the people and the world around us.
+        <br> <br>
+        From check in to check out and back again, it’s this blend of the indispensable, unexpected, and imperceptible that makes Alpine Riverhill Villa a top choice among many, and a destination unto itself.
+        <br> <br>
+        The primary goal of Alpine Riverhill Villa is the complete fulfilment of the guests’ needs and wishes. Whether a business trip, a group stay or a corporate event, we will go the extra mile to make you feel comfortable. Because at Alpine Riverhill, we want all our guests to feel totally at ease.
+        <br> <br>
+        Join a movement of people seeking more than just great accommodation.
+        <br> <br>
+        </h3>
+  </div>  
+</h1>
+  <div class="aboutb">
+    
+<img src="alpinehomeback.jpg" alt="home" width="1535px" height="350px" id="imgpop"> 
+<h1>INTUITIVE SERVICE</h1> <br>
+<h3>Behind the amenities and beyond the design details lies Alpine Riverhill's signature service philosophy. At the ready before guests’ call, invisible when privacy is prized, it's an intuitive approach with very tangible advantages. <br> <br>
+
+    Service starts with guest needs innovatively anticipated, then uniquely accommodated. Warmth is a given, discretion an essential. Options for personalizing and streamlining your stay abound, with preferences assured on return visits. <br> <br>
+    
+    With a mission to overlook no detail or desire, the entire Alpine Riverhill staff is focused on delivering a seamless experience—for each guest and every request. <br> <br> </h3>
+
+  </div>
+
+ <br><br><br> <br> <br> <br> <br><br><br> <br><br>
+
+  <div class="aboutc">
+    <h1 class="animate__animated animate__fadeInUp wow">
+   CORE VALUES OF ALPINE RIVERHILL </h1></h1> <br> <br>
+   <h3 class="animate__animated animate__fadeInUp wow">At Alpine Riverhill, we are a professional, passionate, caring and empowering company that encourages innovation and engagement. We are a learning organisation committed to the retention and development of our people as an essential part of building strong, respectful and enduring guest relationships. Our staff are motivated, friendly and obsessive about enhancing the guest experience through meeting and exceeding expectations for quality service.</h3></h3>
+ <br><br> <br><br><br>
+
+ <div class="aboutd">
+    <h4 class="animate__animated animate__zoomIn wow">
+<nav>
+    <h1>Team Work</h1> <br>
+    <h3>We recognize that superlative performance is always the result of teamwork.</h3>
+
+</nav>
+    </h4>
+ </div>
+ <br><br><br>
+
+ <div class="aboute">
+    <h4 class="animate__animated animate__zoomIn wow">
+    <nav>
+        <h1>Ownership</h1> <br>
+        <h3>We always take responsibility for our actions.</h3>
+    
+    </nav>
+    </h4>
+     </div>
+     <br><br><br>
+     <div class="aboutf">
+        <h4 class="animate__animated animate__zoomIn wow">
+        <nav>
+            <h1>Respect and Empathy</h1> <br>
+            <h3>We exhibit respect and concern for colleagues, guests and partners.</h3>
+        
+        </nav>
+        ?</h4>
+         </div>
+
+  
+
+  <br><br><br>
+     <div class="aboutg">
+        <h4 class="animate__animated animate__zoomIn wow">
+        <nav>
+            <h1>Integrity</h1> <br>
+            <h3>We always maintain the highest standards of fairness and transparency in all our dealings.</h3>
+        
+        </nav>
+        </h4>
+         </div>
+
+         <br><br><br>
+     <div class="abouth">
+        <h4 class="animate__animated animate__zoomIn wow">
+        <nav>
+            <h1>Spirited Fun</h1> <br>
+            <h3>We create an exciting and spirited work environment encouraging our colleagues to think freely.</h3>
+        
+        </nav>
+        </h4>
+         </div>
+
+         <br><br><br>
+     <div class="abouti">
+        <h4 class="animate__animated animate__zoomIn wow">
+        <nav>
+            <h1>Excellence</h1> <br>
+            <h3>We always drive excellence in what we do.</h3>
+        
+        </nav>
+        </h4>
+         </div>
+         <br><br><br>
+     <div class="aboutj">
+        <h4 class="animate__animated animate__zoomIn wow">
+        <nav>
+
+            <h1>Honesty and Integrity</h1> <br>
+            <h3>At Alpine Riverhill, we inspire fairness and trust in our day-to-day dealings with our stakeholders</h3>
+        
+        </nav>
+        </h4>
+         </div>
+         <br><br><br>
+     <div class="aboutk">
+        <h4 class="animate__animated animate__zoomIn wow">
+        <nav>
+            <h1>Interactive yet responsible communication</h1> <br>
+            <h3>We maintain communication with each other and communicate in a manner to have a positive impact.</h3>
+        
+        </nav>
+        </h4>
+         </div>
+         <br><br><br>
+     <div class="aboutl">
+        <h4 class="animate__animated animate__zoomIn wow">
+        <nav>
+            <h1>Respect for Individuals</h1> <br>
+            <h3>We believe working with us possesses strengths to the organization should strive to leverage them.</h3>
+        
+        </nav>
+        </h4>
+         </div>
+  </div>  <br><br><br><br><br><br>
+        
+    <div class="clearfix"></div>
+    <h4 class="animate__animated animate__fadeInUp wow">
+    <div class="mno-prepend">
+        </div>
+
+    <div class="mno">
+        <div class="column">
+            <img src="alpinelogo.png" alt="loogo" width="80px">
+            <h2> ALPINE RIVERHILL </h2>
+            <br><br>
+
+            Alpine Riverhill Villa is a modern & upscale vacation rental villa that is passionate about ‘making moments’
+            and recognising that small gestures make a big difference to our guests. We do ordinary things in an
+            extraordinary way – a philosophy that has defined our brand’s success from the very start. <br><br><br>
+        </div>
+        <div class="column">
+            <h2>QUICK LINKS: </h2>
+            <br> <br>
+            <ul>
+                <li> <i class="fa-solid fa-house"></i> <a href="alpinem.html"> Home</a></li> <br> <br>
+                <li> <i class="fa-solid fa-image"></i> <a href="gallery.html"> Gallery</a></li><br> <br>
+                <li> <i class="fa-solid fa-bacteria"></i> <a href="covid.html"> Covid-19 Safety Practices</a></li><br> <br>
+                <li> <i class="fa-solid fa-crown"></i> <a href="offers.html"> Offers</a></li><br> <br>
+                <li> <i class="fa-solid fa-quote-left"></i> <a href="testimonials.html">Testimonials</a></li><br> <br>
+                <li> <i class="fa-solid fa-circle-info"></i> <a href="about.html"> About Us</a></li><br><br>
+                <li> <i class="fa-solid fa-phone"></i> <a href="contact.html"> Contact Us</a></li><br><br>
+            </ul> <br><br><br>
+        </div>
+        <div class="column">
+            <h2>CONTACTS DETAILS:</h2>
+            <br>
+            Address:
+            Bungalow no. 01, River Hill Park Society, Near Sai Brooklands, Opp. Sidhu Dhaba, Takve, Old Mumbai-Pune
+            Highway, Lonavala - 410405
+            Contact Number:
+            +919930247992 / +919667555554 <br>
+            Social: <br>
+            <a href="https://www.facebook.com/" id="one"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" id="two"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://web.whatsapp.com/" id="three"><i class="fa-brands fa-whatsapp"></i></a>
+
+        </div>
+    </div>
+    
+
+    
+
+    <div class="pqr">
+        <h4><br> <i class="fa-regular fa-copyright"></i> 2020 Alpine Riverhill | All Rights Reserved </h4>
+
+    </div>
+</h4>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    
+</body>
+</html>
